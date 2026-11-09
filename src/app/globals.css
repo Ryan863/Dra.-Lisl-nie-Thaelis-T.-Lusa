@@ -3,10 +3,14 @@
 :root {
   --bg-alabaster: #FAF8F5;
   --surface-white: #FFFFFF;
+  --surface-warm: #F4EFEA;
+  --surface-dark: #201C1A;
   --text-charcoal: #2A2624;
   --text-stone: #68625D;
   --accent-champagne: #C5A880;
+  --accent-champagne-light: #DFCDAF;
   --accent-champagne-hover: #A88B63;
+  --accent-wood: #7D5C43;
   --accent-rose: #B98579;
 }
 
@@ -27,8 +31,8 @@
   }
 
   ::selection {
-    background-color: rgba(197, 168, 128, 0.25);
-    color: #2A2624;
+    background-color: rgba(197, 168, 128, 0.35);
+    color: #201C1A;
   }
 }
 
@@ -57,4 +61,12 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #C5A880;
 }
+
+/* Metallic Champagne Text Gradient */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #D9C3A0 0%, #A88B63 50%, #C5A880 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
